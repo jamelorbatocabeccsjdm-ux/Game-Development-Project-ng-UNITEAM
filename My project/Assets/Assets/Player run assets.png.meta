@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: 259d52cbaea0e064fac1799ea7928a5e
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Player run assets_0
+      rect:
+        serializedVersion: 2
+        x: 289
+        y: 1076
+        width: 133
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aa1ffec28195d64a80a35b793cc3358
+      internalID: 1322423933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_1
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 1047
+        width: 187
+        height: 182
+      alignment: 9
+      pivot: {x: 0.18942146, y: 0.74175084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fa7169074644904ea85b381a22025f5
+      internalID: 905051770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_2
+      rect:
+        serializedVersion: 2
+        x: 728
+        y: 1030
+        width: 151
+        height: 203
+      alignment: 9
+      pivot: {x: 0.12703235, y: 0.18789147}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 225a3140741271943988828ceb4de486
+      internalID: -585147908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_3
+      rect:
+        serializedVersion: 2
+        x: 940
+        y: 1014
+        width: 265
+        height: 211
+      alignment: 9
+      pivot: {x: 0.5132822, y: 0.17470287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c239458563acbb948a04c21e6a0829b6
+      internalID: 1904991620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_4
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 427
+        width: 147
+        height: 195
+      alignment: 9
+      pivot: {x: 0.841936, y: 0.75776714}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cd0c8eb65968344399bda1f80bce35b
+      internalID: 231145018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_5
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 741
+        width: 221
+        height: 237
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626622fc089822a4a851ac429602fca4
+      internalID: 1829102853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_6
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 663
+        width: 344
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb3ef4b8a0e7aa41a96c7dd1b78d623
+      internalID: -1105215386
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_7
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 376
+        width: 125
+        height: 210
+      alignment: 9
+      pivot: {x: 0.40144384, y: 0.709518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04201479ecd4d9e42b9e99ef4b524e57
+      internalID: 1294829568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_8
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 806
+        width: 261
+        height: 117
+      alignment: 9
+      pivot: {x: 0.74133486, y: 0.48878935}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c80618ff305c14e916a1f9bbbf3b5a
+      internalID: -1098164633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_9
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 231
+        width: 150
+        height: 229
+      alignment: 9
+      pivot: {x: 0.72927696, y: 0.84657216}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddb2541960edf94194556867e6de538
+      internalID: 1229737531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_10
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 180
+        width: 289
+        height: 319
+      alignment: 9
+      pivot: {x: 0.3233972, y: 0.72619975}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 380ada396d5341744857f6fb453752b5
+      internalID: -127550159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Player run assets_11
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 55
+        width: 272
+        height: 171
+      alignment: 9
+      pivot: {x: 0.89877075, y: 0.4226462}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed168c8fa01cce540bd9aeef8cf748fd
+      internalID: -1682426700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 92dc0dd5908805342add0314270a358e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Player run assets_0: 1322423933
+      Player run assets_1: 905051770
+      Player run assets_10: -127550159
+      Player run assets_11: -1682426700
+      Player run assets_2: -585147908
+      Player run assets_3: 1904991620
+      Player run assets_4: 231145018
+      Player run assets_5: 1829102853
+      Player run assets_6: -1105215386
+      Player run assets_7: 1294829568
+      Player run assets_8: -1098164633
+      Player run assets_9: 1229737531
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
