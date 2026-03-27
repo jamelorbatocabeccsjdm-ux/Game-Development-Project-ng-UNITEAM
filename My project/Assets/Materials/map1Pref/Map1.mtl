@@ -1,0 +1,20 @@
+newmtl Collider
+map_Kd GridBox_Collider.png
+Kd 1.0 1.0 1.0
+d 1.0
+
+newmtl Dirt
+map_Kd dirt.jpg
+Kd 1 1 1
+d 1
+
+newmtl Rock
+map_Kd stone 1.jpg
+Kd 1 1 1
+d 1
+
+newmtl GrassTop
+map_Kd GrassTexture 1.png
+Kd 1 1 1
+d 1
+
