@@ -40,25 +40,27 @@ public class Playermovement : MonoBehaviour
         }
             
 
-        if(Input.GetAxis("Horizontal") != 0 )
-        {
-            _animator.SetBool("isRunning",true);
-        }
-        else
-        {
-            _animator.SetBool("isRunning",false);
-        }
+        // Set animation booleans
+        bool isMovingHorizontal = Mathf.Abs(horizontalInputt) > 0.01f;
+        _animator.SetBool("isRunning", isMovingHorizontal);
 
-        float vert = Mathf.Abs(Input.GetAxis("Vertical"));
-
-        if(vert > 0 && Input.GetAxis("Horizontal") == 0)
+        if (verticalInput < 0 && !isMovingHorizontal)
         {
             _animator.SetBool("isRunningToward", true);
         }
-        else 
+        else
         {
             _animator.SetBool("isRunningToward", false);
         }
         
+        if(verticalInput > 0 && !isMovingHorizontal)
+        {
+            _animator.SetBool("isBackward", true);
+        }
+        else
+        {
+            _animator.SetBool("isBackward", false);
+        }
+
     }
 }
