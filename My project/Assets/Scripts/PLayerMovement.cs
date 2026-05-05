@@ -15,7 +15,9 @@ public class PlayerMovement : MonoBehaviour
     [Header("Movement")]
     public float moveSpeed = 5f;
 
-    public float jumpStrength = 1.5f;
+    [Header("Animation")]
+    private float _lastX;
+    private float _lastZ;
 
     [Header("Physics")]
     public float gravity = -9.8f; 
@@ -30,9 +32,9 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        if(Input.GetMouseButtonDown(0))
         {
-            ApplyJump();
+            Attack();
         }
     }
 
@@ -60,13 +62,25 @@ public class PlayerMovement : MonoBehaviour
 
         float MoveVel = Mathf.Abs(moveDir.magnitude);
         
-        animator.SetFloat("x", x);
-        animator.SetFloat("y", z);
         animator.SetFloat("isMoving", MoveVel);
 
+        if(x != 0 || z != 0)
+        {
+            _lastX = x;
+            _lastZ = z;
+        }
+
+        SetFloat(_lastX, _lastZ);
         controller.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
     }
 
+    void SetFloat(float x, float y)
+    {
+        animator.SetFloat("x", x);
+        animator.SetFloat("y", y);
+    }
+
+#region Gravity and Jumping
     void ApplyGravity()
     {
         if (controller.isGrounded && _velocity.y < 0)
@@ -78,13 +92,14 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(_velocity * Time.deltaTime);
     }
+    #endregion
+#endregion
 
-    public void ApplyJump()
+    #region Attack
+    void Attack()
     {
-        if(!controller.isGrounded) return;
-        _velocity.y = Mathf.Sqrt(groundedForce * gravity * jumpStrength);
+        animator.SetTrigger("Attack");
     }
-
     #endregion
 
 }

@@ -312405,7 +312405,6 @@ MonoBehaviour:
   playerObj: {fileID: 1367009845}
   animator: {fileID: 1367009842}
   moveSpeed: 10
-  jumpStrength: 1.5
   gravity: -9.8
   groundedForce: -2
 --- !u!210 &1915598713
