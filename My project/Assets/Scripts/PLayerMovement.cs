@@ -8,9 +8,11 @@ public class PlayerMovement : MonoBehaviour
 {
     [Header("References")]
     public Transform orientation;
-    public Transform playerObj;
-    CharacterController controller;
     public Animator animator;
+
+    private CharacterController controller;
+    private AttackScript attackscript;
+    private PlayerDodge dodgescript;
 
     [Header("Movement")]
     public float moveSpeed = 5f;
@@ -20,22 +22,16 @@ public class PlayerMovement : MonoBehaviour
     private float _lastZ;
 
     [Header("Physics")]
-    public float gravity = -9.8f; 
+    public float gravity = -9.8f;
     public float groundedForce = -2f;
+
     private Vector3 _velocity;
 
-    #region Built in Methods
     void Start()
     {
         controller = GetComponent<CharacterController>();
-    }
-
-    void Update()
-    {
-        if(Input.GetMouseButtonDown(0))
-        {
-            Attack();
-        }
+        attackscript = GetComponent<AttackScript>();
+        dodgescript = GetComponent<PlayerDodge>();
     }
 
     void FixedUpdate()
@@ -44,43 +40,46 @@ public class PlayerMovement : MonoBehaviour
         ApplyGravity();
     }
 
-    void LateUpdate()
-    {
-        
-    }
-    #endregion
-
-    #region Movement Methods
-
     void ApplyMovement()
     {
+        // 🔥 1. HIGHEST PRIORITY: DODGE (never interrupt movement logic incorrectly)
+        if (dodgescript != null && dodgescript.isDodging)
+        {
+            animator.SetFloat("isMoving", 0);
+            return;
+        }
+
+        // ⚔️ 2. ATTACK BLOCKS MOVEMENT (but NOT dodge)
+        if (attackscript != null && attackscript.isAttacking)
+        {
+            animator.SetFloat("isMoving", 0);
+            return;
+        }
+
+        // 🏃 3. NORMAL MOVEMENT INPUT
         float x = Input.GetAxisRaw("Horizontal");
         float z = Input.GetAxisRaw("Vertical");
 
         Vector3 moveDir = orientation.forward * z + orientation.right * x;
         moveDir.y = 0;
 
-        float MoveVel = Mathf.Abs(moveDir.magnitude);
-        
-        animator.SetFloat("isMoving", MoveVel);
+        float moveAmount = moveDir.magnitude;
 
-        if(x != 0 || z != 0)
+        animator.SetFloat("isMoving", moveAmount);
+
+        // Save last direction for idle blend
+        if (x != 0 || z != 0)
         {
             _lastX = x;
             _lastZ = z;
         }
 
-        SetFloat(_lastX, _lastZ);
+        animator.SetFloat("x", _lastX);
+        animator.SetFloat("y", _lastZ);
+
         controller.Move(moveDir.normalized * moveSpeed * Time.deltaTime);
     }
 
-    void SetFloat(float x, float y)
-    {
-        animator.SetFloat("x", x);
-        animator.SetFloat("y", y);
-    }
-
-#region Gravity and Jumping
     void ApplyGravity()
     {
         if (controller.isGrounded && _velocity.y < 0)
@@ -92,16 +91,4 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(_velocity * Time.deltaTime);
     }
-    #endregion
-#endregion
-
-    #region Attack
-    void Attack()
-    {
-        animator.SetTrigger("Attack");
-    }
-    #endregion
-
 }
-
-

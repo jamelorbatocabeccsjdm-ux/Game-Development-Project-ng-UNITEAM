@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 9d4c90e0706b06d42865345a8a0b4764
+guid: 340bd4817914d5e4ca70491d833ab2eb
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,8 +48,8 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 800
-  spriteBorder: {x: 294, y: 0, z: 1022, w: 0}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Untitled44_20260504143144_0
+      name: Untitled44_20260520154820_0
       rect:
         serializedVersion: 2
-        x: 289
-        y: 0
-        width: 1450
-        height: 1500
+        x: 2100
+        y: 750
+        width: 700
+        height: 750
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,8 +111,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 90d46946223b6d0428b9db435d163c0c
-      internalID: 1150966656
+      spriteID: 8fcd24a9e0c295d479604cd5c699e919
+      internalID: 1463564953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled44_20260520154820_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 700
+        height: 750
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 043c751f73f2bfd409dfe43bd01bacc6
+      internalID: -1528541998
       vertices: []
       indices: 
       edges: []
@@ -121,15 +142,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Untitled44_20260504143144_0: 1150966656
-      Untitled44_20260504143144_1: 1574679714
+      Untitled44_20260520154820_0: 1463564953
+      Untitled44_20260520154820_1: -1528541998
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

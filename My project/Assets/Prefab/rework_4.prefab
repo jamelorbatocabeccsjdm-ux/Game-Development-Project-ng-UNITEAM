@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3036248922864278054}
   - component: {fileID: 8612577861159764809}
-  - component: {fileID: 4470038905715269576}
+  - component: {fileID: 739896835946378936}
   m_Layer: 0
   m_Name: rework_4
   m_TagString: Untagged
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: a6218e22c362ce94e9f47e9020e32231, type: 3}
+  - {fileID: 2100000, guid: b56e9d0ea54f2a74ca07f8177ec4a654, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 1466487181, guid: df2cf1b5b3829ab4a93a686d093b982b, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.99607843, g: 0.84705883, b: 0.7058824, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,18 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &4470038905715269576
-SortingGroup:
+--- !u!65 &739896835946378936
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4348641627412563266}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
+  serializedVersion: 3
+  m_Size: {x: 0.59, y: 0.55, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &8216020791790704427
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,13 +132,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8216020791790704427}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.25846434, y: 0.013545525, z: 0.0505526, w: 0.96460205}
+  m_LocalRotation: {x: 0, y: 0, z: 0.052335896, w: 0.9986295}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3036248922864278054}
-  m_LocalEulerAnglesHint: {x: -30, y: 0, z: 6}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 6}
 --- !u!65 &348541034298049789
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -149,5 +158,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 6.5, y: 3, z: 0.7}
-  m_Center: {x: -0.5, y: -1, z: 0}
+  m_Size: {x: 6.5, y: 2.5, z: 0.5}
+  m_Center: {x: -0.5, y: -2, z: 0}

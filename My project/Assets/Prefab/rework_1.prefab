@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4629153535037683776}
   - component: {fileID: 4521645870642778439}
-  - component: {fileID: 4884890942920012979}
+  - component: {fileID: 6189633321139505038}
   m_Layer: 0
   m_Name: rework_1
   m_TagString: Untagged
@@ -54,7 +54,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: a6218e22c362ce94e9f47e9020e32231, type: 3}
+  - {fileID: 2100000, guid: b56e9d0ea54f2a74ca07f8177ec4a654, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,18 +86,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &4884890942920012979
-SortingGroup:
+--- !u!65 &6189633321139505038
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 253326060437683572}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
+  serializedVersion: 3
+  m_Size: {x: 0.21, y: 0.733, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4256964350561733936
 GameObject:
   m_ObjectHideFlags: 0
@@ -123,7 +132,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4256964350561733936}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2588191, y: -0, z: -0, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.07692307, y: 0.07692307, z: 0.07692307}
   m_ConstrainProportionsScale: 0
@@ -149,5 +158,5 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 4, z: 0.1}
-  m_Center: {x: -0.2, y: -3, z: -1.5}
+  m_Size: {x: 0.5, y: 2, z: 0.1}
+  m_Center: {x: 0, y: -4, z: 0}

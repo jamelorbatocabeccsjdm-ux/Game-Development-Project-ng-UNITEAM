@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 314249496315283865}
   - component: {fileID: 5398623144508354554}
-  - component: {fileID: 3971743517568799581}
   m_Layer: 0
   m_Name: rework_2
   m_TagString: Untagged
@@ -54,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: a6218e22c362ce94e9f47e9020e32231, type: 3}
+  - {fileID: 2100000, guid: b56e9d0ea54f2a74ca07f8177ec4a654, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -86,18 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &3971743517568799581
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1316411770345256733}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
 --- !u!1 &8569918182417979029
 GameObject:
   m_ObjectHideFlags: 0
@@ -150,4 +137,4 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 3, y: 2.5, z: 0.1}
-  m_Center: {x: 0, y: -1, z: -0.3}
+  m_Center: {x: 0, y: -1, z: -0.5}
