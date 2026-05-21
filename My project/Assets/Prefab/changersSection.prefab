@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2750211247125543295}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2574028, y: 0.000000028798112, z: -0.000000007671202, w: 0.9663042}
+  m_LocalRotation: {x: 0.2574035, y: 0.0000006497237, z: -0.000000173073, w: 0.966304}
   m_LocalPosition: {x: 0.116680145, y: 6.4503613, z: -5.7442894}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -58,7 +58,7 @@ MonoBehaviour:
     FieldOfView: 60
     OrthographicSize: 9.17
     NearClipPlane: 0.01
-    FarClipPlane: 500
+    FarClipPlane: 100
     Dutch: 0
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_CameraRadius: 0.48
   m_Strategy: 2
   m_MaximumEffort: 7
-  m_SmoothingTime: 0.49
+  m_SmoothingTime: 2
   m_Damping: 0
   m_DampingWhenOccluded: 0
   m_OptimalTargetDistance: 0
@@ -113,7 +113,6 @@ GameObject:
   m_Component:
   - component: {fileID: 6686794885273805577}
   - component: {fileID: 8090728613940482209}
-  - component: {fileID: 7950065314833716256}
   - component: {fileID: 7457743752627386872}
   m_Layer: 0
   m_Name: 'Player Parent '
@@ -157,18 +156,6 @@ MonoBehaviour:
   moveSpeed: 10
   gravity: -9.8
   groundedForce: -2
---- !u!210 &7950065314833716256
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5153579206530887368}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
 --- !u!143 &7457743752627386872
 CharacterController:
   m_ObjectHideFlags: 0
@@ -257,8 +244,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6062071198131133230}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.2574028, y: 0.000000028798112, z: -0.000000007671202, w: 0.9663042}
-  m_LocalPosition: {x: 0.116680145, y: 6.4503613, z: -5.7442894}
+  m_LocalRotation: {x: 0.2574035, y: 0.0000006497237, z: -0.000000173073, w: 0.966304}
+  m_LocalPosition: {x: -71.19332, y: 6.150362, z: -10.969994}
   m_LocalScale: {x: 6.25, y: 6.2499995, z: 6.2499995}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -296,7 +283,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.01
-  far clip plane: 500
+  far clip plane: 100
   field of view: 60
   orthographic: 0
   orthographic size: 9.17
@@ -526,7 +513,6 @@ GameObject:
   - component: {fileID: 3371943214463893988}
   - component: {fileID: 3737771625009898117}
   - component: {fileID: 4243850530137845451}
-  - component: {fileID: 5401761481017135459}
   m_Layer: 0
   m_Name: playerObj
   m_TagString: Untagged
@@ -622,18 +608,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &5401761481017135459
-SortingGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7914044561628425303}
-  m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
 --- !u!1 &7989448287359831426
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3302041543706664790}
-  - component: {fileID: 6860897073555217776}
+  - component: {fileID: 3138983173529332897}
   m_Layer: 0
   m_Name: Collision
   m_TagString: Untagged
@@ -25,14 +25,14 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 247474631179817997}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.2588191, y: -0, z: -0, w: 0.9659258}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 3777495951244980272}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &6860897073555217776
+--- !u!65 &3138983173529332897
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -51,8 +51,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.5, y: 3, z: 0.1}
-  m_Center: {x: 0, y: -2, z: -1}
+  m_Size: {x: 1, y: 3, z: 0.1}
+  m_Center: {x: 0, y: -2, z: 0}
 --- !u!1 &7936307304525498251
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +63,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3777495951244980272}
   - component: {fileID: 5752023514092483655}
-  - component: {fileID: -8706783051613511345}
+  - component: {fileID: 1196492378916923704}
   m_Layer: 0
   m_Name: Tree 1
   m_TagString: Untagged
@@ -80,7 +80,7 @@ Transform:
   m_GameObject: {fileID: 7936307304525498251}
   serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -107,7 +107,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -876546973899608171, guid: a6218e22c362ce94e9f47e9020e32231, type: 3}
+  - {fileID: 2100000, guid: b56e9d0ea54f2a74ca07f8177ec4a654, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -128,8 +128,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2077687425, guid: 270be1d2e20284747b0fdf74d1563ec5, type: 3}
-  m_Color: {r: 0.98490566, g: 0.51556855, b: 0, a: 1}
+  m_Sprite: {fileID: 892229310, guid: 356d8b8adbda2bf4aa9e716c91f9d3d9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -139,15 +139,24 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!210 &-8706783051613511345
-SortingGroup:
+--- !u!65 &1196492378916923704
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7936307304525498251}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
   m_Enabled: 1
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 1
-  m_SortAtRoot: 0
+  serializedVersion: 3
+  m_Size: {x: 0.29, y: 0.75, z: 0.01}
+  m_Center: {x: 0, y: 0, z: 0}
