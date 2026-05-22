@@ -28,13 +28,11 @@ public class AttackScript : MonoBehaviour
 
     void Update()
 {
-    // INPUT BUFFER
     if (Input.GetMouseButtonDown(0))
     {
         inputBuffered = true;
     }
 
-    // 🔥 BLOCK NEW ATTACKS DURING DODGE
     if (!dodgescript.isDodging)
     {
         if (inputBuffered && Time.time >= nextAttackTime)
@@ -44,7 +42,6 @@ public class AttackScript : MonoBehaviour
         }
     }
 
-    // RESET COMBO
     if (Time.time - lastClickTime > comboResetTime)
     {
         comboStep = 0;
@@ -69,13 +66,11 @@ public class AttackScript : MonoBehaviour
         animator.SetTrigger("Attack");
     }
 
-    // 🎬 Animation Event
     public void EndAttack()
     {
         isAttacking = false;
     }
 
-    // 🚨 Called by Dodge script (IMPORTANT FIX)
    public void CancelAttack()
 {
     isAttacking = false;
