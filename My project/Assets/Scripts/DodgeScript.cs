@@ -11,6 +11,7 @@ public class PlayerDodge : MonoBehaviour
     [Header("Dodge Settings")]
     public float dodgeCooldown = 1f;
     private float nextDodgeTime;
+    public float ManageStamina = 20f;
 
     [Header("Dash Movement")]
     public float dodgeSpeed = 10f;
@@ -24,12 +25,14 @@ public class PlayerDodge : MonoBehaviour
     private float lastTapD;
 
     public bool isDodging;
+    public EntityStats entityStats;
 
     void Start()
     {
         animator = GetComponent<Animator>();
         attackscript = GetComponent<AttackScript>();
         controller = GetComponent<CharacterController>();
+        entityStats = GetComponent<EntityStats>();
     }
 
     void Update()
@@ -79,6 +82,7 @@ public class PlayerDodge : MonoBehaviour
         isDodging = true;
 
         // 🔥 SAVE DASH DIRECTION
+        entityStats.ConsumeStamina(ManageStamina);
         dodgeDirection = direction.normalized;
 
         // ⚔️ CANCEL ATTACK

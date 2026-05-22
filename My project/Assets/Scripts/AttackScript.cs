@@ -20,10 +20,15 @@ public class AttackScript : MonoBehaviour
     private int comboStep = 0;
     private bool inputBuffered = false;
 
+    [Header("Attack Collsion")]
+    public CapsuleCollider attackPoint;
+    EntityStats entityStats;
+
     void Start()
     {
         animator = GetComponent<Animator>();
         dodgescript = GetComponent<PlayerDodge>();
+        entityStats = GetComponent<EntityStats>();
     }
 
     void Update()
@@ -53,6 +58,7 @@ public class AttackScript : MonoBehaviour
     {
         lastClickTime = Time.time;
 
+        attackPoint.enabled = true;
         isAttacking = true;
 
         comboStep++;
@@ -69,16 +75,18 @@ public class AttackScript : MonoBehaviour
     public void EndAttack()
     {
         isAttacking = false;
+        attackPoint.enabled = false;
     }
 
-   public void CancelAttack()
-{
-    isAttacking = false;
-    inputBuffered = false;
+    public void CancelAttack()
+    {
+        attackPoint.enabled = false;
+        isAttacking = false;
+        inputBuffered = false;
 
-    comboStep = 0;
+        comboStep = 0;
 
-    animator.ResetTrigger("Attack");
-    animator.SetInteger("Combo", 0);
-}
+        animator.ResetTrigger("Attack");
+        animator.SetInteger("Combo", 0);
+    }
 }
