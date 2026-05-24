@@ -1,8 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
-using Cinemachine.Utility;
+using Cinemachine;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -27,11 +28,18 @@ public class PlayerMovement : MonoBehaviour
 
     private Vector3 _velocity;
 
+    public Transform virtualCamera;
+
     void Start()
     {
         controller = GetComponent<CharacterController>();
         attackscript = GetComponent<AttackScript>();
         dodgescript = GetComponent<PlayerDodge>();
+    }
+
+    void Update()
+    {
+        
     }
 
     void FixedUpdate()
@@ -90,5 +98,19 @@ public class PlayerMovement : MonoBehaviour
         _velocity.y += gravity * Time.deltaTime;
 
         controller.Move(_velocity * Time.deltaTime);
+    }
+
+    public void CamShake(float frequency, float intensity)
+    {
+        if (virtualCamera != null)
+        {
+            CinemachineVirtualCamera vcam = virtualCamera.GetComponent<CinemachineVirtualCamera>();
+            var noise = vcam.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
+            if (noise != null)
+            {
+                noise.m_AmplitudeGain = intensity;
+                noise.m_FrequencyGain = frequency;
+            }
+        }
     }
 }

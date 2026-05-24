@@ -124,6 +124,7 @@ public class EnemyAI : MonoBehaviour
     private void HandleChaseState()
     {
         agent.SetDestination(playerTarget.position);
+        playerTarget.GetComponent<PlayerMovement>().CamShake(0f, 0f);
     }
 
     private void HandleAttackState()
@@ -142,6 +143,7 @@ public class EnemyAI : MonoBehaviour
             Attack();
             attackTimer = attackCooldown;
         }
+
     }
 
     private void MoveToNextPatrolPoint()
@@ -178,6 +180,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Attack()
     {
+        playerTarget.GetComponent<PlayerMovement>().CamShake(2f, 2f);
         animator.SetTrigger(attackTriggerHash);
     }
     private void OnDrawGizmosSelected()
